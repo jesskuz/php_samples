@@ -1,6 +1,8 @@
 <?php
    // Recursive string reversal
-   function reverse($string) {
+   // With PHP7 arguments and return type coecion
+
+   function reverse(string $string): string {
 
       static $output = '';
 
@@ -14,4 +16,5 @@
       return call_user_func(__FUNCTION__, implode($split));
 
    };
+
 
